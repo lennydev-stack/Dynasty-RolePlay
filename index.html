@@ -8,48 +8,231 @@
     <link href="https://unpkg.com/lucide-icons/dist/umd/lucide-icons.js">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Dynasty RP</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#jobs" class="nav-link">Jobs</a>
+                <a href="#vehicles" class="nav-link">Fahrzeuge</a>
+                <a href="#gallery" class="nav-link">Galerie</a>
+                <button class="connect-btn">Server Beitreten</button>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <!-- Hero Section -->
-        <header class="hero">
+        <header id="home" class="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
+                <div class="server-status online">
+                    <span class="status-dot"></span>
+                    Server Online: 128/128 Spieler
+                </div>
                 <h1>Dynasty RolePlay</h1>
-                <p>Tauche ein in eine einzigartige GTA V Rollenspiel-Erfahrung</p>
+                <p class="hero-subtitle">Tauche ein in eine einzigartige GTA V Rollenspiel-Erfahrung</p>
                 <div class="hero-buttons">
-                    <button class="btn-primary">Jetzt Spielen</button>
-                    <button class="btn-secondary">Discord Beitreten</button>
+                    <button class="btn-primary">
+                        <i data-lucide="play" class="btn-icon"></i>
+                        Jetzt Spielen
+                    </button>
+                    <button class="btn-secondary">
+                        <i data-lucide="message-circle" class="btn-icon"></i>
+                        Discord Beitreten
+                    </button>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse"></div>
+                    <p>Scroll für mehr</p>
                 </div>
             </div>
+            <div class="hero-video-overlay"></div>
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
+            </video>
         </header>
 
+        <!-- Server Highlights -->
+        <section class="server-highlights">
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎮</div>
+                    <h3>Eigene Wirtschaft</h3>
+                    <p>Dynamisches Wirtschaftssystem mit Spieler-gesteuertem Markt</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏠</div>
+                    <h3>Immobilien</h3>
+                    <p>Kaufe und gestalte dein eigenes Zuhause</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">💼</div>
+                    <h3>Firmen</h3>
+                    <p>Gründe dein eigenes Unternehmen</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎯</div>
+                    <h3>Events</h3>
+                    <p>Tägliche Events mit tollen Preisen</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Features Section -->
-        <section class="features">
-            <h2>Unsere Features</h2>
+        <section id="features" class="features">
+            <h2 class="section-title">Unsere Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <i data-lucide="users" class="feature-icon"></i>
                     <h3>Aktive Community</h3>
                     <p>Werde Teil unserer lebendigen Community mit hunderten aktiven Spielern.</p>
+                    <div class="feature-stats">24/7 aktiv</div>
                 </div>
                 <div class="feature-card">
                     <i data-lucide="gamepad" class="feature-icon"></i>
                     <h3>Einzigartiges Gameplay</h3>
                     <p>Erlebe maßgeschneiderte Systeme und einzigartige Spielmechaniken.</p>
+                    <div class="feature-stats">100+ Features</div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card highlight">
                     <i data-lucide="shield" class="feature-icon"></i>
                     <h3>Faire Administration</h3>
                     <p>Unser erfahrenes Team sorgt für ein faires Spielerlebnis.</p>
+                    <div class="feature-stats">50+ Team Mitglieder</div>
                 </div>
                 <div class="feature-card">
                     <i data-lucide="server" class="feature-icon"></i>
                     <h3>Stabile Server</h3>
                     <p>Hochleistungsserver für ein reibungsloses Spielerlebnis.</p>
+                    <div class="feature-stats">99.9% Uptime</div>
                 </div>
                 <div class="feature-card">
                     <i data-lucide="message-square" class="feature-icon"></i>
                     <h3>Support 24/7</h3>
                     <p>Rund um die Uhr Support durch unser engagiertes Team.</p>
+                    <div class="feature-stats">5min Antwortzeit</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jobs Section -->
+        <section id="jobs" class="jobs">
+            <h2 class="section-title">Karrieremöglichkeiten</h2>
+            <div class="jobs-grid">
+                <div class="job-card police">
+                    <div class="job-icon">👮</div>
+                    <h3>Polizei</h3>
+                    <p>Sorge für Recht und Ordnung in der Stadt</p>
+                    <ul class="job-features">
+                        <li>Eigene Dienstgrade</li>
+                        <li>Spezialeinheiten</li>
+                        <li>Exklusive Fahrzeuge</li>
+                    </ul>
+                </div>
+                <div class="job-card medic">
+                    <div class="job-icon">🚑</div>
+                    <h3>Sanitäter</h3>
+                    <p>Rette Leben und hilf anderen Spielern</p>
+                    <ul class="job-features">
+                        <li>Notfallsystem</li>
+                        <li>Krankenhaus Management</li>
+                        <li>Medizinische Forschung</li>
+                    </ul>
+                </div>
+                <div class="job-card mechanic">
+                    <div class="job-icon">🔧</div>
+                    <h3>Mechaniker</h3>
+                    <p>Repariere und tune Fahrzeuge</p>
+                    <ul class="job-features">
+                        <li>Eigene Werkstatt</li>
+                        <li>Tuning System</li>
+                        <li>Fahrzeughandel</li>
+                    </ul>
+                </div>
+                <div class="job-card mafia">
+                    <div class="job-icon">🎭</div>
+                    <h3>Mafia</h3>
+                    <p>Führe deine eigene Verbrecherorganisation</p>
+                    <ul class="job-features">
+                        <li>Territorium System</li>
+                        <li>Illegale Geschäfte</li>
+                        <li>Gang Warfare</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicles Section -->
+        <section id="vehicles" class="vehicles">
+            <h2 class="section-title">Premium Fahrzeuge</h2>
+            <div class="vehicles-showcase">
+                <div class="vehicle-card">
+                    <div class="vehicle-image" style="background-image: url('https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')"></div>
+                    <div class="vehicle-info">
+                        <h3>Luxury Sports</h3>
+                        <div class="vehicle-stats">
+                            <div class="stat">
+                                <span>Geschwindigkeit</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Handling</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Beschleunigung</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 88%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicle-card">
+                    <div class="vehicle-image" style="background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')"></div>
+                    <div class="vehicle-info">
+                        <h3>Muscle Car</h3>
+                        <div class="vehicle-stats">
+                            <div class="stat">
+                                <span>Geschwindigkeit</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Handling</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 75%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Beschleunigung</span>
+                                <div class="stat-bar"><div class="stat-fill" style="width: 92%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2 class="section-title">Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')">
+                    <div class="gallery-overlay">
+                        <h3>Luxus Apartments</h3>
+                        <p>Erstklassiges Wohnen in Los Santos</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')">
+                    <div class="gallery-overlay">
+                        <h3>Exklusive Fahrzeuge</h3>
+                        <p>Die schnellsten Wagen der Stadt</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')">
+                    <div class="gallery-overlay">
+                        <h3>Nachtleben</h3>
+                        <p>Erlebe die Stadt bei Nacht</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -58,11 +241,11 @@
         <section class="stats">
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">1000+</div>
+                    <div class="stat-number" data-count="1000">1000+</div>
                     <div class="stat-label">Registrierte Spieler</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">50+</div>
+                    <div class="stat-number" data-count="50">50+</div>
                     <div class="stat-label">Aktive Fraktionen</div>
                 </div>
                 <div class="stat-card">
@@ -76,15 +259,134 @@
             </div>
         </section>
 
+        <!-- Reviews Section -->
+        <section class="reviews">
+            <h2 class="section-title">Spielerstimmen</h2>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-avatar">👤</div>
+                    <div class="review-content">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Der beste RP Server, auf dem ich je gespielt habe. Fantastische Community!"</p>
+                        <div class="review-author">- MaxGaming</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-avatar">👤</div>
+                    <div class="review-content">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Unglaublich detaillierte Rollenspielerfahrung mit vielen Möglichkeiten."</p>
+                        <div class="review-author">- RPMaster99</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-avatar">👤</div>
+                    <div class="review-content">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Die Admins sind super hilfsbereit und das Gameplay ist einzigartig!"</p>
+                        <div class="review-author">- GameQueen</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Bereit zum Spielen?</h2>
+                <p>Tritt noch heute der Dynasty RolePlay Community bei!</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary">Server Beitreten</button>
+                    <button class="btn-secondary">Guide Lesen</button>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i data-lucide="check-circle" class="cta-icon"></i>
+                        <span>Sofortiger Zugang</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i data-lucide="heart" class="cta-icon"></i>
+                        <span>Freundliche Community</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i data-lucide="gift" class="cta-icon"></i>
+                        <span>Starter Bonus</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer>
-            <p>© 2024 Dynasty RolePlay. Alle Rechte vorbehalten.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dynasty RolePlay</h3>
+                    <p>Der beste GTA V RageMP Roleplay Server</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="youtube"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <a href="#">Regeln</a>
+                    <a href="#">Forum</a>
+                    <a href="#">Support</a>
+                    <a href="#">Team</a>
+                    <a href="#">Karriere</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <a href="#">Discord</a>
+                    <a href="#">Events</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Changelog</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">AGB</a>
+                    <a href="#">Cookie-Richtlinie</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Dynasty RolePlay. Alle Rechte vorbehalten.</p>
+            </div>
         </footer>
     </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.feature-card, .job-card, .gallery-item, .stat-card, .review-card').forEach((el) => {
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
