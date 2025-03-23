@@ -1,13 +1,90 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dynasty RolePlay</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynasty RolePlay - GTA V RageMP Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/lucide-icons/dist/umd/lucide-icons.js">
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Dynasty RolePlay</h1>
+                <p>Tauche ein in eine einzigartige GTA V Rollenspiel-Erfahrung</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Jetzt Spielen</button>
+                    <button class="btn-secondary">Discord Beitreten</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Unsere Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i data-lucide="users" class="feature-icon"></i>
+                    <h3>Aktive Community</h3>
+                    <p>Werde Teil unserer lebendigen Community mit hunderten aktiven Spielern.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="gamepad" class="feature-icon"></i>
+                    <h3>Einzigartiges Gameplay</h3>
+                    <p>Erlebe maßgeschneiderte Systeme und einzigartige Spielmechaniken.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="shield" class="feature-icon"></i>
+                    <h3>Faire Administration</h3>
+                    <p>Unser erfahrenes Team sorgt für ein faires Spielerlebnis.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="server" class="feature-icon"></i>
+                    <h3>Stabile Server</h3>
+                    <p>Hochleistungsserver für ein reibungsloses Spielerlebnis.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="message-square" class="feature-icon"></i>
+                    <h3>Support 24/7</h3>
+                    <p>Rund um die Uhr Support durch unser engagiertes Team.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Registrierte Spieler</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Aktive Fraktionen</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Server Uptime</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Dynasty RolePlay. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
 </html>
