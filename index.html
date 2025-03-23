@@ -30,29 +30,31 @@
             <div class="hero-content">
                 <div class="server-status online">
                     <span class="status-dot"></span>
-                    Server Online: 128/128 Spieler
+                    Server Online: 0/5000 Spieler
                 </div>
                 <h1>Dynasty RolePlay</h1>
-                <p class="hero-subtitle">Tauche ein in eine einzigartige GTA V Rollenspiel-Erfahrung</p>
+                <p class="hero-subtitle"></p>
                 <div class="hero-buttons">
                     <button class="btn-primary">
                         <i data-lucide="play" class="btn-icon"></i>
                         Jetzt Spielen
                     </button>
-                    <button class="btn-secondary">
+                    <button class="btn-secondary" onclick="window.location.href='https://discord.gg/jcU5SU8VUq';">
                         <i data-lucide="message-circle" class="btn-icon"></i>
                         Discord Beitreten
-                    </button>
-                </div>
-                <div class="scroll-indicator">
-                    <div class="mouse"></div>
-                    <p>Scroll für mehr</p>
+                    </button>                    
                 </div>
             </div>
             <div class="hero-video-overlay"></div>
-            <video autoplay loop muted playsinline class="hero-video">
+            <video id="hero-video" autoplay loop muted playsinline class="hero-video">
                 <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
             </video>
+            
+            <script>
+              const video = document.getElementById('hero-video');
+              video.currentTime = 16; // Video beginnt ab Sekunde 16
+              video.play(); // Sicherstellen, dass das Video abgespielt wird
+            </script>            
         </header>
 
         <!-- Server Highlights -->
@@ -100,7 +102,7 @@
                 <div class="feature-card highlight">
                     <i data-lucide="shield" class="feature-icon"></i>
                     <h3>Faire Administration</h3>
-                    <p>Unser erfahrenes Team sorgt für ein faires Spielerlebnis.</p>
+                    <p>Unser erfahrenes Team sorgt für ein faires Spielerlebnis. und euch bei allem zu Helfen.</p>
                     <div class="feature-stats">50+ Team Mitglieder</div>
                 </div>
                 <div class="feature-card">
@@ -112,7 +114,7 @@
                 <div class="feature-card">
                     <i data-lucide="message-square" class="feature-icon"></i>
                     <h3>Support 24/7</h3>
-                    <p>Rund um die Uhr Support durch unser engagiertes Team.</p>
+                    <p>Rund um die Uhr Support durch unser engagiertes Team. [IC]</p>
                     <div class="feature-stats">5min Antwortzeit</div>
                 </div>
             </div>
@@ -143,23 +145,23 @@
                     </ul>
                 </div>
                 <div class="job-card mechanic">
-                    <div class="job-icon">🔧</div>
-                    <h3>Mechaniker</h3>
-                    <p>Repariere und tune Fahrzeuge</p>
+                    <div class="job-icon">🔫</div>
+                    <h3>Gangs</h3>
+                    <p>Werde Krimminell und übernehme die Stadt.</p>
                     <ul class="job-features">
-                        <li>Eigene Werkstatt</li>
-                        <li>Tuning System</li>
-                        <li>Fahrzeughandel</li>
+                        <li>Feste Anwesen</li>
+                        <li>Viele Gang Fahrezeuge</li>
+                        <li>Gute Geld Möglichkeiten</li>
                     </ul>
                 </div>
                 <div class="job-card mafia">
-                    <div class="job-icon">🎭</div>
-                    <h3>Mafia</h3>
-                    <p>Führe deine eigene Verbrecherorganisation</p>
+                    <div class="job-icon">👥</div>
+                    <h3>Eigenes Leben</h3>
+                    <p>Tuhe das auf was du Lust hast</p>
                     <ul class="job-features">
-                        <li>Territorium System</li>
-                        <li>Illegale Geschäfte</li>
-                        <li>Gang Warfare</li>
+                        <li>Viel Freiheit</li>
+                        <li>Viele Entscheidungen</li>
+                        <li>Viel mehr Zeit</li>
                     </ul>
                 </div>
             </div>
@@ -216,13 +218,13 @@
         <section id="gallery" class="gallery">
             <h2 class="section-title">Galerie</h2>
             <div class="gallery-grid">
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')">
+                <div class="gallery-item" style="background-image: url('https://th.bing.com/th/id/OIP.Q_B9VguXMEHeKWqNpgiogwHaFR?rs=1&pid=ImgDetMain')">
                     <div class="gallery-overlay">
                         <h3>Luxus Apartments</h3>
-                        <p>Erstklassiges Wohnen in Los Santos</p>
+                        <p>Erstklassiges Wohnungen</p>
                     </div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')">
+                <div class="gallery-item" style="background-image: url('https://img.gta5-mods.com/q95-w550-h275-cfill/images/bmw-m5-f90-2018-add-on-hq-template/405e25-wmplayer%202018-01-05%2017-41-07-16.png')">
                     <div class="gallery-overlay">
                         <h3>Exklusive Fahrzeuge</h3>
                         <p>Die schnellsten Wagen der Stadt</p>
@@ -230,8 +232,8 @@
                 </div>
                 <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')">
                     <div class="gallery-overlay">
-                        <h3>Nachtleben</h3>
-                        <p>Erlebe die Stadt bei Nacht</p>
+                        <h3>Dynasty Admin-Team</h3>
+                        <p>Das Dynasty Admin-Team wird euch bei Allem Helfen.</p>
                     </div>
                 </div>
             </div>
@@ -241,11 +243,7 @@
         <section class="stats">
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number" data-count="1000">1000+</div>
-                    <div class="stat-label">Registrierte Spieler</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-count="50">50+</div>
+                    <div class="stat-number" data-count="50">10</div>
                     <div class="stat-label">Aktive Fraktionen</div>
                 </div>
                 <div class="stat-card">
@@ -267,24 +265,24 @@
                     <div class="review-avatar">👤</div>
                     <div class="review-content">
                         <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Der beste RP Server, auf dem ich je gespielt habe. Fantastische Community!"</p>
-                        <div class="review-author">- MaxGaming</div>
+                        <p>Ziemlich gute Website</p>
+                        <div class="review-author">Gustavo Pinguin</div>
                     </div>
                 </div>
                 <div class="review-card">
                     <div class="review-avatar">👤</div>
                     <div class="review-content">
-                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Unglaublich detaillierte Rollenspielerfahrung mit vielen Möglichkeiten."</p>
-                        <div class="review-author">- RPMaster99</div>
+                        <div class="review-stars">⭐⭐⭐⭐</div>
+                        <p>Sieht Geil aus</p>
+                        <div class="review-author">Maja Summer</div>
                     </div>
                 </div>
                 <div class="review-card">
                     <div class="review-avatar">👤</div>
                     <div class="review-content">
-                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Die Admins sind super hilfsbereit und das Gameplay ist einzigartig!"</p>
-                        <div class="review-author">- GameQueen</div>
+                        <div class="review-stars">⭐⭐⭐⭐</div>
+                        <p>Ziemlich Übersichtlich</p>
+                        <div class="review-author">Mexi White</div>
                     </div>
                 </div>
             </div>
@@ -294,10 +292,12 @@
         <section class="cta">
             <div class="cta-content">
                 <h2>Bereit zum Spielen?</h2>
-                <p>Tritt noch heute der Dynasty RolePlay Community bei!</p>
+                <p></p>
                 <div class="cta-buttons">
                     <button class="btn-primary">Server Beitreten</button>
-                    <button class="btn-secondary">Guide Lesen</button>
+                    <button class="btn-secondary" onclick="window.location.href='https://discord.gg/jcU5SU8VUq';">
+                        Discord Beitreten
+                    </button>                    
                 </div>
                 <div class="cta-features">
                     <div class="cta-feature">
@@ -321,40 +321,37 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Dynasty RolePlay</h3>
-                    <p>Der beste GTA V RageMP Roleplay Server</p>
+                    <p></p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="youtube"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="twitch"></i></a>
+                        <a href="https://www.instagram.com/lennydynasty/" class="social-link" target="_blank">
+                            <span class="text"></span>
+                            <i data-lucide="instagram" class="icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dynastyleandro/" class="social-link" target="_blank">
+                            <i data-lucide="instagram" class="icon"></i>
+                            <span class="text"></span>
+                        </a>                                         
                     </div>
                 </div>
                 <div class="footer-section">
                     <h3>Links</h3>
-                    <a href="#">Regeln</a>
-                    <a href="#">Forum</a>
-                    <a href="#">Support</a>
-                    <a href="#">Team</a>
-                    <a href="#">Karriere</a>
+                    <a href="https://discord.com/channels/1340405004904829112/1340443490592620667">Regeln</a>
+                    <a href="https://images.squarespace-cdn.com/content/v1/591fd77d29687fd09cca478b/1555546030336-YXVPG30KTCM92JW89UTL/ke17ZwdGBToddI8pDm48kDrQ9tfdcvPUv7NgXGP4R2R7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0gmXcXvEVFTLbYX9CdVcGe4zwrosjp5YtnrvbmlM1LFKb7wNXE8lRZ0Z8l5PIsW3Vw/AdobeStock_139559217.jpeg">Forum</a>
                 </div>
                 <div class="footer-section">
-                    <h3>Community</h3>
-                    <a href="#">Discord</a>
-                    <a href="#">Events</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Changelog</a>
+                    <h3></h3>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
                 </div>
-                <div class="footer-section">
-                    <h3>Rechtliches</h3>
-                    <a href="#">Impressum</a>
-                    <a href="#">Datenschutz</a>
-                    <a href="#">AGB</a>
-                    <a href="#">Cookie-Richtlinie</a>
-                </div>
+                <div class="footer-section contact">
+                    <h3>Du hast Fragen?</h3>
+                    <a href="mailto:support@gta5dynasty.com" class="contact-email">support@gta5dynasty.com</a>
+                </div>    
             </div>
             <div class="footer-bottom">
-                <p>© 2024 Dynasty RolePlay. Alle Rechte vorbehalten.</p>
+                <p>© 2025 Dynasty RolePlay. ist nicht mit Take-Two, Rockstar North Interactive oder anderen Rechteinhabern verbunden oder wird von diesen unterstützt. Alle verwendeten Warenzeichen gehören ihren jeweiligen Eigentümern.</p>
             </div>
         </footer>
     </div>
